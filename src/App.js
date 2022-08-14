@@ -1,5 +1,5 @@
 import "bootstrap/dist/css/bootstrap.min.css";
-import { BrowserRouter, Navigate, Outlet, Route, Routes } from "react-router-dom";
+import { HashRouter, Navigate, Outlet, Route, Routes } from "react-router-dom";
 import Footer from "./components/Footer";
 import Navigation from "./components/Navigation";
 import About from "./pages/About";
@@ -12,7 +12,7 @@ import './style.scss';
 function App() {
   return (
     <div className="App">
-      <BrowserRouter>
+      <HashRouter>
         <Routes>
           <Route path="/" element={ <Navigation/> }>
             <Route index element={<About/>}/>
@@ -23,7 +23,7 @@ function App() {
             <Route path="/*" element={ <Navigate replace to="/"/>}/>
           </Route>
         </Routes>
-      </BrowserRouter>
+      </HashRouter>
       <Footer></Footer>
     </div>
 
