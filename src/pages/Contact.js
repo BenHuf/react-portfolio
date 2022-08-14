@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { Col, Container, Row } from "react-bootstrap";
+import { Button, Col, Container, Row } from "react-bootstrap";
 import { validateEmail } from '../utils/helpers'
 
 function ContactForm() {
@@ -43,7 +43,7 @@ function ContactForm() {
             <label htmlFor="name">Name:</label>
           </Col>
           <Col>
-            <input type="text" name="name" defaultValue={name} onBlur={handleChange} />
+            <input type="text" name="Name" defaultValue={name} onBlur={handleChange} />
           </Col>
           <Col>
             <label htmlFor="email">Email address:</label>
@@ -62,7 +62,7 @@ function ContactForm() {
               <p className="error-text">{errorMessage}</p>
             </div>
           )}
-          <button type="submit">Submit</button>
+        <Button type="submit" className="contact-btn" variant="outline-success">Submit</Button>
         </form>
       </Row>
     </Container>

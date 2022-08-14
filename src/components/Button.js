@@ -1,12 +1,16 @@
 import React from "react";
 
 class Button extends React.Component {
-  state = { clicked: false }
+  constructor(props){
+    super(props)
+  
+    this.state = { clicked: false }
+  }
 
   handleClick = () => this.setState({ clicked: true });
 
   render() { 
-    return <button onClick={this.handleClick}>Click Me!</button>;
+    return <button onClick={this.handleClick}>{this.props.text}</button>;
   }
 }
  
