@@ -13,7 +13,7 @@ const Navigation = (props) => {
           <Navbar.Toggle aria-controls="basic-navbar-nav"/>
           <Navbar.Collapse id="basic-navbar-nav">
               <Nav>
-                <Nav.Link href="#about">About Me</Nav.Link>
+                <Nav.Link href="#about" as={Link} to="/about">About Me</Nav.Link>
                 <Nav.Link href="#portfolio" as={Link} to="/portfolio">Portfolio</Nav.Link>
                 <Nav.Link href="#contact" as={Link} to="/contact">Contact</Nav.Link>
                 <Nav.Link href="#resume" as={Link} to="/resume">Resume</Nav.Link>

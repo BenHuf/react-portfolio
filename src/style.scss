@@ -25,12 +25,8 @@ $quinary-color: #0c661b;
 
 section {
   background-color: $tertiary-color;
-  min-height: 90vh;
-  padding: 3vh 3vw;
-}
-
-#about {
-  padding: 3vh 3vw;
+  min-height: 80vh;
+  padding: 3vh 3vh;
 }
 
 form input, form textarea {
@@ -61,10 +57,16 @@ form input, form textarea {
   background-color: $primary-color;
 }
 
-img {
+.work img {
   width: 100%;
+  height: stretch;
   border: solid 1px #0c661b;
   vertical-align: inherit;
+}
+
+.avatar {
+  width: 175px;
+  margin: 15px 0;
 }
 
 img:hover {
@@ -83,12 +85,18 @@ img:hover {
   color: black;
 }
 
-#about {
+.component {
   background-color: $secondary-color;
+  padding: 3vh 3vh;
+  min-height: 73vh;
 }
 
 Footer {
+  display: flex;
   background-color: $primary-color;
+  min-height: 10vh;
+  align-content: center;
+  flex-wrap: wrap;
 }
 
 .navbar-nav .nav-link.active{
@@ -104,6 +112,12 @@ h1{
   color: $primary-color;
   text-shadow: 2px 1px $quinary-color;
   font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+h2 {
+  color: $quinary-color;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  font-size: x-large;
 }
 
 @media (max-width: 267px) {

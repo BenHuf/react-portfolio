@@ -35,7 +35,7 @@ function ContactForm() {
   }
 
   return (
-    <Container fluid>
+    <Container className="about component" fluid>
       <h1>Contact me</h1>
       <Row>
         <form id="contact-form" onSubmit={handleSubmit}>
