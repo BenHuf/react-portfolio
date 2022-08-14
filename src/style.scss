@@ -120,6 +120,16 @@ h2 {
   font-size: x-large;
 }
 
+.github-link a {
+  text-decoration: underline;
+  color: $primary-color;
+  text-shadow: 1px 1px $quinary-color;
+}
+
+.github-link a:hover {
+  color: $slate-gray;
+}
+
 @media (max-width: 267px) {
   .navbar-brand {
     font-size: 1rem;
