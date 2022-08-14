@@ -20,7 +20,7 @@ function App() {
             <Route path="portfolio" element={<Portfolio/>}/>
             <Route path="resume" element={<Resume/>}/>
             <Route path="about" element={<About/>}/>
-            <Route path="*" element={ <Navigate replace to="/"/>}/>
+            <Route path="/*" element={ <Navigate replace to="/"/>}/>
           </Route>
         </Routes>
       </BrowserRouter>
