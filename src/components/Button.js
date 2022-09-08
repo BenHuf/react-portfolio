@@ -10,7 +10,7 @@ class Button extends React.Component {
   handleClick = () => this.setState({ clicked: true });
 
   render() { 
-    return <button onClick={this.handleClick}>{this.props.text}</button>;
+    return <button className="blue" onClick={this.handleClick}>{this.props.text}</button>;
   }
 }
  

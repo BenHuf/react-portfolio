@@ -2,7 +2,7 @@ import { Col, Container } from "react-bootstrap";
 import listenin from "../images/listenin.png";
 import runbuddy from "../images/runbuddy.jpg";
 import encounter from "../images/encounter.png";
-import quiz from "../images/quiz.png";
+import rorschach from "../images/my-rorschach.png";
 import password from "../images/password.png";
 import weather from "../images/weather.png";
 
@@ -20,9 +20,9 @@ const Portfolio = (props) => {
           </a>
         </Col>
         <Col sm={6} md={4}>
-          <h2 className="github-link"><a href="https://github.com/benhuf/javascript-quiz">Coding Quiz</a></h2>
-          <a className="work" href="https://benhuf.github.io/javascript-quiz">
-            <img src={quiz}/>
+          <h2 className="github-link"><a href="https://github.com/BenHuf/my-rorschach/">My Rorschach</a></h2>
+          <a className="work" href="http://www.myrorschach.com">
+            <img src={rorschach}/>
           </a>
         </Col>
         <Col sm={6} md={4}>
@@ -38,8 +38,8 @@ const Portfolio = (props) => {
           </a>
         </Col>
         <Col sm={6} md={4}>
-          <h2 className="github-link"><a href="https://github.com/BenHuf/password-generator/">Password Generator</a></h2>
-          <a className="work" href="https://benhuf.github.io/password-generator/">
+          <h2 className="github-link"><a href="https://github.com/benhuf/password-generator">Password Generator</a></h2>
+          <a className="work" href="https://benhuf.github.io/password-generator">
             <img src={password}/>
           </a>
         </Col>
